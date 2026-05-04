@@ -1,0 +1,22 @@
+#root,
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.mcQueen {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
