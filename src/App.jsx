@@ -7,17 +7,18 @@ function App() {
 
   return (
     <>
-      <section className="overflow-hidden bg-amber-100 h-full">
+      <section className="overflow-hidden bg-linear-to-r from-amber-300 via-amber-350 to-amber-400 h-full p-5 font-sans">
         <img src={rayoMcQueen} alt="" className="mcQueen" />
-        <div className="flex flex-col items-center gap-2 border-t-2 border-black">
-          <h1 className="text-3xl font-bold">Soy javier</h1>
+        <hr className="my-4 border-t-5 border-black-500" />
+        <div className="flex flex-col items-center gap-2">
+          <h1 className="text-3xl my-2 font-bold">Soy Javier</h1>
           <button
-            className="p-2 text-white bg-red-500 cursor-pointer hover:bg-red-600 active:bg-red-700 rounded-sm"
+            className="p-2 text-lg/7 text-white bg-red-500 cursor-pointer hover:bg-red-600 active:bg-red-700 rounded-sm"
             type="button"
             onClick={() => setCount((count) => count + 1)}
           >
             El contador de chicas guapas que han hecho click en este botón es:{" "}
-            {count}
+            <span className="font-bold text-xl/7">{count}</span>
           </button>
         </div>
       </section>
